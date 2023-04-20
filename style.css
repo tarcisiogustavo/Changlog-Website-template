@@ -33,7 +33,7 @@
 html {
   box-sizing: border-box;
   background-color: var(--cor0);
-  color: white;
+  color: rgb(255, 255, 255);
   background-size: cover;
   background-position: right center;
   box-shadow: inset 0px 10px 5px 0px var(--transparent);
