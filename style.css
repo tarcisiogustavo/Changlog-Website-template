@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Open+Sans:400,400i,600,600i,700,700i|Roboto+Slab:300,400,700&subset=cyrillic');
+
+@media (max-width: 320px) {
+  /* Estilos para dispositivos com largura máxima de 320px */
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  /* Estilos para dispositivos com largura mínima de 321px e largura máxima de 768px */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Estilos para dispositivos com largura mínima de 769px e largura máxima de 1024px */
+}
+
+@media (min-width: 1025px) {
+  /* Estilos para dispositivos com largura mínima de 1025px */
+}
+
+:root {
+  --yellow:#FDD835;
+  --blue:#2196F3;
+  --green:#4CAF50;
+  --orange:#FF9800;
+  --red:#f44336;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*::before,
+*,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+header {
+  border-bottom: 1px solid #f3f3f3;
+  padding: 1rem;
+}
+
+header.fixed + .wrap-content {
+   padding-top: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 1;
+}
+
+*{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+article.header {
+    padding: 10px;
+      border-bottom: 1px solid #f3f3f3;
+      padding: 1rem 0;
+}
+
+section.version.header.version-num {
+    margin: 1rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.-planned {
+        color: rgba(0, 0, 0, 0.9);
+      }
+      
+.-labelled {
+        display: inline-flex;
+        padding: 0 4px;
+        border: 2px solid rgba(0,0,0,.5);
+        background: transparent;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+}
+        
+
+.-deprecated {
+        display: inline-flex;
+        padding: 0 4px;
+        border: 2px solid transparent;
+        color: white;
+        background: #4d4d4d;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+}
+.-declined {
+        display: inline-flex;
+        padding: 0 4px;
+        border: 2px solid rgba(0,0,0,.3);
+        color: rgba(0,0,0,.5);
+        background: transparent;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: line-through;
+}
+.datetime>*:not(:first-child){
+      margin: 0 0 0 10px;
+      color: rgba(0,0,0,.5);
+      margin: 0 0 0 10px;
+}
+  .label, .label-inline {
+    display: inline-flex;
+    padding: 4px 10px;
+    margin: 20px 0 5px 0;
+    border: 1px solid transparent;
+    color: white;
+    background: #ffffff;
+    border-radius: 9999px;
+    align-items: center;
+    justify-content: center;
+  }
+.-s{
+      padding: 2px 6px;
+      font-size: 10pt;
+    }
+.-m{
+      padding: 4px 10px;
+      font-size: 12pt;
+    }
+.-l{
+      padding: 6px 14px;
+      font-size: 14pt;
+    }
+.--yellow{
+      color: black;
+      background: var(--yellow);
+    }
+.--blue{
+      color: rgb(255, 255, 255);
+      background: var(--blue);
+    }
+.--green{
+      color: white;
+      background: var(--green);
+    }
+.--orange{
+      color: white;
+      background: var(-green);
+    }
+.--red{
+      color: white;
+      background: var(--red);
+    }
+.-ghost{
+      background: transparent;
+      border: 2px solid #bababa;
+      color: #1a1919;
+      font-weight: 600;
+    }
+.--yellow{
+        color: black;
+        border-color: var(--yellow);
+      }
+.--blue{
+        color: white;
+        border-color: var(--blue);
+      }
+.--green{
+        color: var(-green);
+        border-color: var(--green);
+      }
+.--orange{
+        color: var(--orange);
+        border-color: var(--orange);
+      }
+.--red{
+        color: var(--red);
+        border-color: var(--red);
+      } 
+
+  .label-inline{
+    padding: 2px 6px;
+    font-size: 10pt;
+    border-radius: 5px;
+    margin: 0 5px 0 0;
+  }
+  
+li#none {
+  list-style: none;
+  margin-left: 25px;
+}
+
+ul, ol {
+    list-style-position: inside;
+}   
+
+
+
+
