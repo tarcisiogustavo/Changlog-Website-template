@@ -44,21 +44,12 @@ body{
 }
 
 header {
-  border-bottom: 1px solid #f3f3f3;
-  padding: 1rem;
-}
-
-header.fixed + .wrap-content {
-   padding-top: 60px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: white;
-    z-index: 1;
+  border-bottom: 3px solid #f3f3f3;
+  padding: 1px;
 }
 
 *{
-    max-width: 1024px;
+    max-width: 769px;
     margin: 0 auto;
 }
 
