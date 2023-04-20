@@ -19,10 +19,6 @@
 }
 
 :root {
-  --cor0: black;
-  --cor1: white;
-  --cor3: rgb(49, 49, 49);
-  --transparent: rgba(0, 0, 0, 0.151);
   --yellow:#FDD835;
   --blue:#2196F3;
   --green:#4CAF50;
@@ -32,9 +28,6 @@
 
 html {
   box-sizing: border-box;
-  background-color: var(--cor0);
-  color: rgb(255, 255, 255);
-  background-size: cover;
 }
 
 *::before,
@@ -61,20 +54,57 @@ header {
 }
 
 article.header {
-      padding: 10px;
+    padding: 10px;
       border-bottom: 1px solid #f3f3f3;
       padding: 1rem 0;
 }
 
-h2.version-num {
-  margin: 0 0 10 0px;
+section.version.header.version-num {
+    margin: 1rem 0;
     position: relative;
     display: flex;
     align-items: center;
-}        
+}
 
-.datetime{
-      color: rgba(214, 214, 214, 0.897);
+.-planned {
+        color: rgba(0, 0, 0, 0.9);
+      }
+      
+.-labelled {
+        display: inline-flex;
+        padding: 0 4px;
+        border: 2px solid rgba(0,0,0,.5);
+        background: transparent;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+}
+        
+
+.-deprecated {
+        display: inline-flex;
+        padding: 0 4px;
+        border: 2px solid transparent;
+        color: white;
+        background: #4d4d4d;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+}
+.-declined {
+        display: inline-flex;
+        padding: 0 4px;
+        border: 2px solid rgba(0,0,0,.3);
+        color: rgba(0,0,0,.5);
+        background: transparent;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: line-through;
+}
+.datetime>*:not(:first-child){
+      margin: 0 0 0 10px;
+      color: rgba(0,0,0,.5);
       margin: 0 0 0 10px;
 }
   .label, .label-inline {
@@ -160,11 +190,8 @@ li#none {
 }
 
 ul, ol {
-    background-color: var(--transparent);
-    color: var(--cor1);
     list-style-position: inside;
 }   
-
 
 
 
